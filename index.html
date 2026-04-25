@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Majitha Selvalingam — MA International Economics</title>
+<meta name="description" content="Majitha Selvalingam — MA International Economics candidate at the Geneva Graduate Institute (IHEID). International trade policy, SME competitiveness, and applied econometrics." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Majitha Selvalingam — MA International Economics" />
+<meta property="og:description" content="MA International Economics candidate. International trade policy, SME competitiveness, and applied econometrics." />
+<meta property="og:type" content="website" />
+
+<!-- Favicon (simple inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231F497D'/%3E%3Ctext x='50' y='68' font-family='Georgia, serif' font-size='58' font-weight='700' text-anchor='middle' fill='%23FAF8F3'%3EM%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper: #FAF8F3;
+    --paper-deep: #F4F1E9;
+    --ink: #1A1A1A;
+    --ink-muted: #4A4A4A;
+    --ink-soft: #6B6B6B;
+    --rule: #D9D3C4;
+    --navy: #1F497D;
+    --navy-deep: #163558;
+    --accent: #A8743F;        /* warm ochre */
+    --accent-deep: #8B5E2E;
+    --max-w: 1200px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(31, 73, 125, 0.04), transparent 60%),
+      radial-gradient(ellipse at 80% 100%, rgba(168, 116, 63, 0.05), transparent 60%);
+  }
+
+  ::selection { background: var(--navy); color: var(--paper); }
+
+  a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  a:hover { border-bottom-color: var(--navy); }
+
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 4vw, 3rem);
+  }
+
+  /* ===== Top bar ===== */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(250, 248, 243, 0.75);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem clamp(1.25rem, 4vw, 3rem);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    border-bottom: none !important;
+  }
+  .brand .dot { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: clamp(1rem, 2.5vw, 2rem);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .nav-links a {
+    color: var(--ink-muted);
+    border-bottom: none;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: var(--navy);
+    transition: width 0.25s ease;
+  }
+  .nav-links a:hover::after { width: 100%; }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    padding: clamp(4rem, 12vh, 9rem) 0 clamp(3rem, 8vh, 6rem);
+    position: relative;
+  }
+  .hero-kicker {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--accent-deep);
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+  .hero-kicker::before {
+    content: '';
+    width: 2.2rem;
+    height: 1px;
+    background: var(--accent);
+  }
+  .hero h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2.6rem, 8.5vw, 6.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    margin: 0 0 1.2rem;
+    color: var(--ink);
+    font-variation-settings: "opsz" 144;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--navy);
+  }
+  .hero-sub {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    color: var(--ink-muted);
+    max-width: 52ch;
+    margin: 0 0 2.4rem;
+    line-height: 1.5;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem 2.2rem;
+    font-size: 0.92rem;
+    color: var(--ink-muted);
+  }
+  .hero-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+  .hero-meta-item svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--navy);
+    flex-shrink: 0;
+  }
+  .hero-meta-item a {
+    color: var(--ink-muted);
+    border-bottom-color: var(--rule);
+  }
+  .hero-meta-item a:hover { color: var(--navy); border-bottom-color: var(--navy); }
+
+  /* ===== Section ===== */
+  section {
+    padding: clamp(3.5rem, 8vh, 6rem) 0;
+    border-top: 1px solid var(--rule);
+  }
+  .section-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+  @media (max-width: 800px) {
+    .section-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+  .section-label {
+    position: sticky;
+    top: 100px;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .section-label .num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent-deep);
+    font-size: 1.05rem;
+    letter-spacing: 0;
+    text-transform: none;
+    display: inline-block;
+    margin-right: 0.6rem;
+  }
+  @media (max-width: 800px) {
+    .section-label { position: static; }
+  }
+  .section-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin: 0 0 1.8rem;
+    color: var(--ink);
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--navy);
+  }
+
+  /* ===== Profile prose ===== */
+  .prose p {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    margin: 0 0 1.2rem;
+    max-width: 62ch;
+  }
+  .prose strong { color: var(--ink); font-weight: 600; }
+
+  /* ===== Cards / entries ===== */
+  .entry {
+    padding: 1.8rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .entry:last-child { border-bottom: none; padding-bottom: 0; }
+  .entry:first-child { padding-top: 0; }
+
+  .entry-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.4rem 1.5rem;
+    margin-bottom: 0.35rem;
+  }
+  .entry-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--ink);
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .entry-date {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .entry-org {
+    font-size: 0.97rem;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  .entry-context {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 0.9rem;
+  }
+  .entry ul {
+    margin: 0.6rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .entry ul li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.55rem;
+    color: var(--ink-muted);
+    font-size: 0.97rem;
+    line-height: 1.6;
+  }
+  .entry ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 0.6rem;
+    height: 1px;
+    background: var(--accent);
+  }
+  .entry ul ul {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .entry ul ul li {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+  .entry ul ul li::before {
+    background: var(--ink-soft);
+    width: 0.4rem;
+  }
+
+  /* ===== Skills ===== */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  .skill-block h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .skill-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .skill-block li {
+    padding: 0.35rem 0;
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .skill-block li::before {
+    content: '·';
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ===== Quals ===== */
+  .qual-group { margin-bottom: 1.8rem; }
+  .qual-group:last-child { margin-bottom: 0; }
+  .qual-org {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin: 0 0 0.5rem;
+  }
+  .qual-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .qual-list li {
+    padding: 0.3rem 0 0.3rem 1.2rem;
+    position: relative;
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+  }
+  .qual-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.85em;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--accent);
+  }
+  .qual-list li .pill {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.5rem;
+    font-size: 0.72rem;
+    background: rgba(168, 116, 63, 0.12);
+    color: var(--accent-deep);
+    border-radius: 3px;
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  /* ===== Engagement chips ===== */
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .chip {
+    padding: 0.5rem 0.95rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    background: var(--paper-deep);
+  }
+
+  /* ===== Contact section ===== */
+  #contact {
+    background: linear-gradient(180deg, transparent, rgba(31, 73, 125, 0.04));
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .contact-card {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: 1.8rem;
+    border-radius: 4px;
+  }
+  .contact-card h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 1rem;
+    color: var(--navy);
+    font-size: 1.15rem;
+  }
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.55rem 0;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.97rem;
+  }
+  .contact-link:last-child { border-bottom: none; }
+  .contact-link svg { width: 16px; height: 16px; stroke: var(--navy); flex-shrink: 0; }
+  .contact-link:hover { color: var(--navy); border-bottom-color: var(--navy); }
+
+  .ref-note {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    padding: 3rem 0 2.5rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+  }
+  footer .signature {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-muted);
+    margin-bottom: 0.4rem;
+  }
+
+  /* ===== Reveal animation ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="brand">Majitha<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="border-top: none;">
+    <div class="container">
+      <div class="hero-kicker">MA International Economics — Geneva Graduate Institute (IHEID)</div>
+      <h1>Majitha<br/><em>Selvalingam</em></h1>
+      <p class="hero-sub">
+        Applied economist in training. International trade policy,
+        SME competitiveness, and evidence for development — at the
+        intersection of economics and environmental governance.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Geneva, Switzerland
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:majitha.selvalingam@graduateinstitute.ch">majitha.selvalingam@graduateinstitute.ch</a>
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+41772627520">+41 77 262 7520</a>
+        </div>
+        <div class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://www.linkedin.com/in/majithaselvalingam" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">01</span>About</div>
+      <div>
+        <h2 class="section-title">Where <em>international trade</em> meets <em>evidence-based policy</em>.</h2>
+        <div class="prose reveal">
+          <p>
+            I'm an MA International Economics candidate at the
+            <strong>Geneva Graduate Institute (IHEID)</strong>. Before
+            Geneva, I completed a BSc (Hons) in Agricultural Technology
+            and Management at the University of Peradeniya, with a
+            specialisation in Applied Economics and Business Management
+            — and was awarded the S.F.H. Perera Memorial Prize for
+            greatest competence in the final year examinations.
+          </p>
+          <p>
+            Over the past two and a half years, I've worked across
+            <strong>international trade</strong> and
+            <strong>environmental policy</strong> projects with multiple
+            international organisations. I'm currently an Economist
+            Intern at the <strong>International Trade Centre</strong>
+            (joint agency of the WTO and UN), contributing to the SME
+            Competitiveness Outlook 2027 and supporting firm-level
+            analysis in Stata.
+          </p>
+          <p>
+            Previously, as Project Officer at the
+            <strong>Institute of Policy Studies of Sri Lanka</strong>, I
+            built large-scale trade-policy datasets, ran UNCTAD SMART
+            simulations, conducted 30+ key informant interviews with
+            ministries and regulators, and translated technical findings
+            into policy briefs and public-facing writing. I'm interested
+            in roles that combine
+            <strong>quantitative rigour</strong>,
+            <strong>policy drafting</strong>, and
+            <strong>multi-stakeholder coordination</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">02</span>Education</div>
+      <div>
+        <h2 class="section-title">Education</h2>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">MA International Economics</h3>
+            <span class="entry-date">Sept 2025 – Present</span>
+          </div>
+          <div class="entry-org">Geneva Graduate Institute (IHEID), Switzerland</div>
+          <div class="entry-context">Advanced quantitative methods, international trade, and development economics</div>
+          <ul>
+            <li>Coursework spans advanced microeconomics, macroeconomics, and applied econometric methods, with a focus on trade and development.</li>
+            <li>Ongoing applied work alongside the Master's in Stata, R, and Python — supported by a track record of fieldwork and policy research.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">BSc (Hons) Agricultural Technology and Management</h3>
+            <span class="entry-date">2019 – 2024</span>
+          </div>
+          <div class="entry-org">University of Peradeniya, Sri Lanka</div>
+          <div class="entry-context">Specialisation in Applied Economics and Business Management</div>
+          <ul>
+            <li><strong>S.F.H. Perera Memorial Prize</strong> — for greatest competence in the final year examinations of the Applied Economics and Business Management specialisation.</li>
+            <li><strong>Silver Medal</strong> — Best Sri Lankan Undergraduate Agricultural Economics Research Study, Sri Lanka Agriculture Economics Association (SAEA).</li>
+            <li>Coursework spanning microeconomics, macroeconomics, applied econometrics, project analysis, financial and management accounting, and international trade.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">03</span>Experience</div>
+      <div>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Economist Intern</h3>
+            <span class="entry-date">Mar 2026 – Present</span>
+          </div>
+          <div class="entry-org">International Trade Centre (ITC) — joint agency of the WTO and UN</div>
+          <div class="entry-context">Strategies and Policies for Trade and Investment (SPTI), Division of Market Development · Geneva</div>
+          <ul>
+            <li>Conducting the literature review for the <strong>SME Competitiveness Outlook 2027</strong> and contributing to chapter drafting in the <em>Promoting SME Competitiveness</em> series, drawing on survey data and the wider literature.</li>
+            <li>Building Stata do-files for firm-level analysis of SME performance indicators — running diagnostics, presenting results in Excel, summarising findings, and revising based on feedback from the Chief, management, and external partners.</li>
+            <li>Producing analytical charts and quantitative summaries on the creative sector for internal and external audiences.</li>
+            <li>Supporting the team with ad hoc analytical tasks, concise briefs, and material refinement based on inputs from senior staff.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Project Officer</h3>
+            <span class="entry-date">May 2024 – Jun 2025</span>
+          </div>
+          <div class="entry-org">Institute of Policy Studies (IPS) of Sri Lanka</div>
+          <div class="entry-context">Macro, Trade and Competitiveness Policy Unit · Colombo</div>
+          <ul>
+            <li>Co-led work on a regional research project — <em>Regional Integration and Cooperation to Promote Affordable and Equitable Access to Pharmaceuticals in the Asia-Pacific: Case Study on Sri Lanka</em>:
+              <ul>
+                <li>Compiled an <strong>18.5M+ record dataset</strong> covering trade flows, tariffs, sanitary &amp; phytosanitary measures, technical barriers to trade, and rules of origin.</li>
+                <li>Conducted <strong>30 key informant interviews</strong> on legal complications with the Ministry of Industry, Ministry of Health, and the National Medicines Regulatory Authority.</li>
+                <li>Produced policy briefs, technical reports, and content blogs — translating findings into stakeholder-relevant advocacy material.</li>
+              </ul>
+            </li>
+            <li>Drafted an analytical brief on the impact of US tax reforms on Sri Lankan and South Asian exports, with insights communicated to the public via institutional blogs.</li>
+            <li><strong>Doing Good Index</strong> (Centre for Asian Philanthropy and Society) — supported nationwide consultations with social-deliverable organisations to evaluate contributions to the Sustainable Development Goals.</li>
+            <li><strong>Apparel-sector pandemic preparedness</strong> (IDRC) — coordinated enumerator training and multi-stakeholder workshops with trade unions and the Ministry of Labour.</li>
+            <li><strong>MSME Competitiveness</strong> (The Asia Foundation) — collected key informant data identifying barriers and opportunities for MSMEs across Northern Sri Lanka.</li>
+            <li>Runner-up, <strong>Saman Kelegama Memorial Research Grant 2023</strong>, IPS Sri Lanka.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Project Intern</h3>
+            <span class="entry-date">Feb 2024 – May 2024</span>
+          </div>
+          <div class="entry-org">Institute of Policy Studies (IPS) of Sri Lanka</div>
+          <div class="entry-context">Macro, Trade and Competitiveness Policy Unit · Colombo</div>
+          <ul>
+            <li>Constructed a <strong>140,000+ observation dataset</strong> on the global coffee trade — consolidating trade-policy data, sanitary &amp; phytosanitary measures, rules of origin, and deep trade agreements across all trade partners.</li>
+            <li>Ran UNCTAD <strong>SMART trade-policy simulations</strong> to assess welfare impacts of tariff reforms and trade agreements.</li>
+            <li>Performed time-series analysis of <strong>Revealed Comparative Advantage</strong> to evaluate Sri Lanka's evolving export competitiveness.</li>
+            <li>Reviewed and translated the institute's annual <em>State of the Economy</em> report and financial statements; supported a forest-environment management project survey.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Assistant Data Analyst</h3>
+            <span class="entry-date">Jan 2023 – Dec 2023</span>
+          </div>
+          <div class="entry-org">Bluma Holdings (Pvt) Ltd</div>
+          <div class="entry-context">Sri Lanka</div>
+          <ul>
+            <li>Conducted data collection, analysis, and reporting to inform decisions across internal departments.</li>
+            <li>Drafted legal letters and supporting documentation.</li>
+            <li>Prepared performance summaries supporting senior team members.</li>
+            <li>Organised stakeholder events and meetings.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section id="research">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">04</span>Research</div>
+      <div>
+        <h2 class="section-title">Research &amp; writing</h2>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Trade policy and global value chain participation in Sri Lanka</h3>
+            <span class="entry-date">2023 – 2024</span>
+          </div>
+          <div class="entry-org">Undergraduate research — University of Peradeniya</div>
+          <div class="entry-context">Implications for selected South Asian nations · Silver Medal, SAEA</div>
+          <ul>
+            <li>Examined how trade-policy variables shape Sri Lanka's participation in global value chains, with comparative analysis across selected South Asian economies.</li>
+            <li>Presented at the <strong>14th Undergraduate Students Research Competition</strong>, Sri Lanka Agriculture Economics Association (SAEA) — awarded the Silver Medal.</li>
+            <li>Presented at the <strong>International Conference on Applied Economics</strong>, Pennsylvania State University at Altoona.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">US election outcomes and trade policy changes: what it means for Sri Lanka</h3>
+            <span class="entry-date">Nov 2024</span>
+          </div>
+          <div class="entry-org">Talking Economics — Institute of Policy Studies of Sri Lanka</div>
+          <div class="entry-context">Public-facing policy commentary</div>
+          <ul>
+            <li>Analysed the implications of post-election US trade policy for Sri Lanka and regional exports, translating econometric work into accessible commentary for a general audience.</li>
+            <li>Read the piece on the IPS site:
+              <a href="https://www.ips.lk/talkingeconomics/2024/11/18/us-election-outcomes-and-trade-policy-changes-what-it-means-for-sri-lanka/" target="_blank" rel="noopener">talkingeconomics — IPS</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">05</span>Toolkit</div>
+      <div>
+        <h2 class="section-title">Toolkit</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-block">
+            <h3>Statistical &amp; econometric software</h3>
+            <ul>
+              <li>Stata</li>
+              <li>R / RStudio</li>
+              <li>Python</li>
+              <li>EViews</li>
+              <li>MATLAB</li>
+              <li>Julia</li>
+              <li>LINDO</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Trade policy &amp; data methods</h3>
+            <ul>
+              <li>UNCTAD SMART simulations</li>
+              <li>Large-dataset construction (18M+ records)</li>
+              <li>Time-series &amp; RCA analysis</li>
+              <li>Key informant interviews</li>
+              <li>Survey design support</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3>Research &amp; reporting</h3>
+            <ul>
+              <li>LaTeX (academic writing)</li>
+              <li>Microsoft Excel (advanced)</li>
+              <li>Word, PowerPoint, Teams</li>
+              <li>Policy briefs &amp; technical reports</li>
+              <li>English &amp; Tamil (native), Sinhala</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUALIFICATIONS ============ -->
+  <section id="qualifications">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">06</span>Qualifications</div>
+      <div>
+        <h2 class="section-title">Certifications &amp; training</h2>
+
+        <div class="reveal">
+          <div class="qual-group">
+            <h4 class="qual-org">Statistical &amp; programming (Coursera)</h4>
+            <ul class="qual-list">
+              <li>The STATA Omnibus: Regression and Modelling with STATA</li>
+              <li>Data Analysis with R Specialisation — Probability &amp; Data, Inferential Statistics, Linear Regression and Modelling</li>
+              <li>Julia Scientific Programming</li>
+            </ul>
+          </div>
+
+          <div class="qual-group">
+            <h4 class="qual-org">ESG &amp; sustainability (Coursera)</h4>
+            <ul class="qual-list">
+              <li>Materiality of ESG Factors Specialisation — ESG Risks &amp; Opportunities, Investor Perspective, Climate Change, Social Activism</li>
+            </ul>
+          </div>
+
+          <div class="qual-group">
+            <h4 class="qual-org">International environmental law — UN InforMEA</h4>
+            <ul class="qual-list">
+              <li>Introductory course to International Environmental Law</li>
+              <li>Basic principles of chairing meetings of the Basel, Rotterdam and Stockholm conventions</li>
+              <li>Basel Convention — Trans-boundary Movements of Hazardous Wastes &amp; their Disposal</li>
+              <li>Rotterdam Convention — Prior Informed Consent for Hazardous Chemicals and Pesticides in International Trade</li>
+              <li>Stockholm Convention on Persistent Organic Pollutants</li>
+            </ul>
+          </div>
+
+          <div class="qual-group">
+            <h4 class="qual-org">Trade policy &amp; regional cooperation</h4>
+            <ul class="qual-list">
+              <li>ESCAP-IDE Workshop on Trade and SDGs <span class="pill">UNESCAP</span></li>
+              <li>Unleashing Digital Trade and Investment for Sustainable Development <span class="pill">UNESCAP</span></li>
+              <li>Optimizing trade agreement text analysis: ESCAP's Trade Agreement Text Analysis Tool <span class="pill">UNESCAP</span></li>
+              <li>Bay of Bengal Regional Integration Capacity Building Programme <span class="pill">SANEM &amp; The Asia Foundation</span></li>
+            </ul>
+          </div>
+
+          <div class="qual-group">
+            <h4 class="qual-org">Food security &amp; resilience (FAO)</h4>
+            <ul class="qual-list">
+              <li>Understanding Resilience Index Measurement and Analysis</li>
+              <li>Monitoring Price Incentives for Food and Agriculture: the MAFAP Method</li>
+            </ul>
+          </div>
+
+          <div class="qual-group" style="margin-top: 2rem;">
+            <h4 class="qual-org" style="font-style: italic; font-weight: 500;">Academic &amp; professional engagement</h4>
+            <div class="chips" style="margin-top: 0.7rem;">
+              <span class="chip">International Conference on Applied Economics — Penn State Altoona</span>
+              <span class="chip">14th Undergraduate Research Competition — SAEA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">07</span>Get in touch</div>
+      <div>
+        <h2 class="section-title">Let's <em>talk</em>.</h2>
+        <p class="prose" style="margin-bottom: 2rem;">
+          Currently in Geneva and open to opportunities in international
+          trade, SME competitiveness, environmental and trade-policy
+          analysis, and applied economic research. The fastest way to
+          reach me is email.
+        </p>
+
+        <div class="contact-grid reveal">
+          <div class="contact-card">
+            <h3>Direct</h3>
+            <a class="contact-link" href="mailto:majitha.selvalingam@graduateinstitute.ch">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              majitha.selvalingam@graduateinstitute.ch
+            </a>
+            <a class="contact-link" href="tel:+41772627520">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+              +41 77 262 7520
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/majithaselvalingam" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/majithaselvalingam
+            </a>
+          </div>
+          <div class="contact-card">
+            <h3>References</h3>
+            <p class="ref-note">
+              Available on request. Past supervisors and mentors at the
+              International Trade Centre (Geneva), the Institute of
+              Policy Studies of Sri Lanka, and the University of
+              Peradeniya can speak to my analytical, research, and
+              policy work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="signature">— Majitha Selvalingam —</div>
+    <div>© <span id="year"></span> · Built with care in Geneva.</div>
+  </div>
+</footer>
+
+<script>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll-reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+</body>
+</html>
