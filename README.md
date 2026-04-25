@@ -2,7 +2,7 @@
 
 Personal portfolio site for Majitha Selvalingam — MA International Economics candidate at the Geneva Graduate Institute (IHEID).
 
-Live site: <https://majitha.github.io> *(once deployed)*
+Live site: <https://majitha-s.github.io> *(once deployed)*
 
 ## Stack
 
